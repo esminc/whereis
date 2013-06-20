@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @watcher.name
+%p
+  %b Email:
+  = @watcher.email
+
+= link_to 'Edit', edit_watcher_path(@watcher)
+\|
+= link_to 'Back', watchers_path
