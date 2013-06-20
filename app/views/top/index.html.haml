@@ -1,1 +1,10 @@
-welcome top page
+%header
+  %nav.wrap
+    %ul
+      %li= link_to "Where is", "/",{:class => "logo"}
+%main
+  #watchers
+    %h1 Watchers
+    %ul
+      - 5.times.each do
+        %li= link_to 'name', '#', target: '_blank'
