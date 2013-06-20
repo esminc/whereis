@@ -6,6 +6,6 @@
   #watchers
     %h1 Watchers
     %ul
-      - 5.times.each do
-        %li= link_to 'name', '#', target: '_blank'
-    =link_to 'Add', '#', { class: 'button' }
+      - @watchers.each do |watcher|
+        %li= link_to watcher.name, '#', target: '_blank'
+    =link_to 'Add', new_watcher_path, { class: 'button' }

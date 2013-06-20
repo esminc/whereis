@@ -26,7 +26,7 @@ class WatchersController < ApplicationController
     @watcher = Watcher.new(watcher)
 
     if @watcher.save
-      redirect_to @watcher, notice: 'Watcher was successfully created.'
+      redirect_to root_path, notice: 'Watcher was successfully created.'
     else
       render action: 'new'
     end
