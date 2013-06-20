@@ -28,3 +28,7 @@ group :test do
     gem 'rspec-rails'
   end
 end
+
+group :development do
+  gem 'tapp'
+end
