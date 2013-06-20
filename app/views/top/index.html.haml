@@ -6,5 +6,5 @@
     %h1 Watching
     %ul
       - @watchers.each do |watcher|
-        %li= link_to watcher.name, '#', target: '_blank'
+        %li= link_to watcher.name, "https://www.google.com/calendar/b/1/embed?src=#{watcher.email}&ctz=Asia/Tokyo", target: '_blank'
     = link_to 'Add', new_watcher_path, class: 'button'
