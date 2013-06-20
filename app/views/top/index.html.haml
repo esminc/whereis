@@ -1,11 +1,10 @@
 %header
   %nav.wrap
-    %ul
-      %li= link_to "Where is", "/",{:class => "logo"}
+    where is
 %main
   #watchers
     %h1 Watchers
     %ul
       - @watchers.each do |watcher|
         %li= link_to watcher.name, '#', target: '_blank'
-    =link_to 'Add', new_watcher_path, { class: 'button' }
+    = link_to 'Add', new_watcher_path, class: 'button'
