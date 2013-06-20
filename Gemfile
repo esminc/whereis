@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'active_decorator'
 gem 'action_args'
+gem 'httpclient'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

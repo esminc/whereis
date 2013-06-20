@@ -97,6 +97,7 @@ GEM
       haml (>= 3.1, < 4.1)
       railties (>= 3.1, < 4.1)
     hike (1.2.3)
+    httpclient (2.3.3)
     i18n (0.6.1)
     journey (1.0.4)
     jquery-rails (3.0.1)
@@ -197,6 +198,7 @@ DEPENDENCIES
   factory_girl_rails
   google-api-client
   haml-rails
+  httpclient
   jquery-rails
   pg
   poltergeist!
